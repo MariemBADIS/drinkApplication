@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "drinkApplication"
+    }
+  },
+  "defaultProject": "drinkApplication",
+  "cli": {
+    "analytics": "50c1bda5-d28f-4535-a6f2-4b79c0226804"
+  }
 }
