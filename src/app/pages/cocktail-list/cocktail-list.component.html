@@ -1,1 +1,8 @@
-<p>cocktail-list works!</p>
+<div class="container">
+  <div class="row col-12">
+    <div class="col-4 p-4" *ngFor="let c of cocktails">
+      <h4>{{c.strDrink}}</h4>
+      <img src="{{c.strDrinkThumb}}" alt="" height="200px">
+    </div>
+  </div>
+</div>

@@ -13,7 +13,7 @@ const routes: Routes = [
     path: 'categories', component: CategoriesComponent
   },
   {
-    path: 'categorie/cocktails', component: CocktailListComponent
+    path: 'categorie/cocktails/:nomC', component: CocktailListComponent
   },
   {
     path: 'cocktails/details', component: CocktailDetailsComponent
