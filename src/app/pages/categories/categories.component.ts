@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import axios from 'axios';
 
 @Component({
   selector: 'app-categories',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoriesComponent implements OnInit {
 
+  categories = [];
+
   constructor() { }
 
   ngOnInit(): void {
+    this.getCategorie();
+  }
+
+  public getCategorie() {
+    axios.get('https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list')
+      .then(res => {
+        console.log(res.data);
+        this.categories = res.data.drinks;
+      })
+      .catch(err => {
+        console.log(err);
+      });
   }
 
 }
