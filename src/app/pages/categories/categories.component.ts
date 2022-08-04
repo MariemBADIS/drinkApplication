@@ -27,4 +27,12 @@ export class CategoriesComponent implements OnInit {
       });
   }
 
+  valideCategorie(categorie) {
+    if (categorie.indexOf('/') === -1) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
 }

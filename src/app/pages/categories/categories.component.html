@@ -1,6 +1,7 @@
 <div class="container">
   <div class="card" *ngFor="let c of categories">
-    <a routerLink="/categorie/cocktails/{{c.strCategory}}">
+    <a *ngIf="valideCategorie(c.strCategory)"
+      routerLink="/categorie/cocktails/{{c.strCategory}}">
     <h1>{{c.strCategory}}</h1>
     </a>
   </div>
