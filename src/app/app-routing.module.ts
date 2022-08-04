@@ -16,7 +16,7 @@ const routes: Routes = [
     path: 'categorie/cocktails/:nomC', component: CocktailListComponent
   },
   {
-    path: 'cocktails/details', component: CocktailDetailsComponent
+    path: 'cocktail/details/:idC', component: CocktailDetailsComponent
   },
   {
     path: 'cocktails/search', component: CocktailSearchComponent
