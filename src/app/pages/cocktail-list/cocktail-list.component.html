@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row col-12">
     <div class="col-4 p-4" *ngFor="let c of cocktails">
-      <h4>{{c.strDrink}}</h4>
+      <a routerLink="/cocktail/details/{{ c.idDrink }}">{{c.strDrink}}</a>
       <img src="{{c.strDrinkThumb}}" alt="" height="200px">
     </div>
   </div>
