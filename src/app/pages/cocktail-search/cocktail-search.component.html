@@ -1,1 +1,15 @@
-<p>cocktail-search works!</p>
+<div class="container p-4">
+  <input type="text" placeholder="search for cocktail" class="form-control"
+         (keyup)="searchCopcktail(searchCocktail.value)" #searchCocktail>
+
+  <div class="row col-12">
+    <div class="col-4 p-2" *ngFor="let cocktail of cocktails">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{cocktail.strDrinkThumb}}" alt="Card image cap">
+        <div class="card-body">
+          <a href="#" class="btn btn-primary">{{ cocktail.strDrink}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

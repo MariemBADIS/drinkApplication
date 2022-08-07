@@ -1,8 +1,12 @@
 <div class="container">
   <div class="row col-12">
-    <div class="col-4 p-4" *ngFor="let c of cocktails">
-      <a routerLink="/cocktail/details/{{ c.idDrink }}">{{c.strDrink}}</a>
-      <img src="{{c.strDrinkThumb}}" alt="" height="200px">
+    <div class="col-4 p-2" *ngFor="let c of cocktails">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{c.strDrinkThumb}}" alt="Card image cap">
+        <div class="card-body">
+          <a routerLink="/cocktail/details/{{ c.idDrink }}">{{c.strDrink}}</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
